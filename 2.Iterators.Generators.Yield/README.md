@@ -6,7 +6,7 @@
 nested_list = [
 	['a', 'b', 'c'],
 	['d', 'e', 'f'],
-	['g', 'h', 'i'],
+	[1, 2, None],
 ]
 for item in FlatIterator(nested_list):
 	print(item) #  
@@ -32,7 +32,7 @@ for item in FlatIterator(nested_list):
 nested_list = [
 	['a', 'b', 'c'],
 	['d', 'e', 'f'],
-	['g', 'h', 'i'],
+	[1, 2, None],
 ]
 for item in  flat_generator(nested_list):
 	print(item)
