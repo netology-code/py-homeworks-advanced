@@ -22,7 +22,7 @@ if __name__ == '__main__':
 \*4. Создать рядом с файлом main.py модуль dirty_main.py и импортировать все функции с помощью
 конструкции (необязательное задание)
 ```
-from package import *
+from package.module import *
 ```
 
 ---
