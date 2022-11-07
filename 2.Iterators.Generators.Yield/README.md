@@ -2,7 +2,7 @@
 
 1. Доработать класс `FlatIterator` в коде ниже. Должен получиться итератор, который принимает список списков и возвращает их плоское представление, т.е последовательность состоящую из вложенных элементов. Функция `test` в коде ниже также должна отработать без ошибок.
 
-```
+```python
 class FlatIterator:
 
     def __init__(self, list_of_list):
@@ -17,7 +17,7 @@ class FlatIterator:
         return item
 
 
-def test():
+def test_1():
 
     list_of_lists_1 = [
         ['a', 'b', 'c'],
@@ -36,13 +36,13 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
+    test_1()
 ```
 
 
 2. Доработать функцию flat_generator, Должен получиться генератор, который принимает список списков и возвращает их плоское представление.
 Функция `test` в коде ниже также должна отработать без ошибок.
-```
+```python
 import types
 
 
@@ -53,7 +53,7 @@ def flat_generator(list_of_lists):
     ...
 
 
-def test():
+def test_2():
 
     list_of_lists_1 = [
         ['a', 'b', 'c'],
@@ -74,13 +74,13 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
+    test_2()
     
 ```
 
 3.__*__ Написать итератор аналогичный итератору из задания 1, но обрабатывающий списки с любым уровнем вложенности.
 Шаблон и тест в коде ниже:
-```
+```python
 class FlatIterator:
 
     def __init__(self, list_of_list):
@@ -95,7 +95,7 @@ class FlatIterator:
         return item
 
 
-def test():
+def test_3():
 
     list_of_lists_2 = [
         [['a'], ['b', 'c']],
@@ -114,12 +114,12 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
+    test_3()
 ```
 
 4.__*__ Написать генератор аналогичный генератору из задания 2, но обрабатывающий списки с любым уровнем вложенности.
 Шаблон и тест в коде ниже:
-```
+```python
 import types
 
 
@@ -128,7 +128,7 @@ def flat_generator(list_of_list):
     yield
     ...
 
-def test():
+def test_4():
 
     list_of_lists_2 = [
         [['a'], ['b', 'c']],
@@ -149,7 +149,7 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
+    test_4()
 
 ```
 
