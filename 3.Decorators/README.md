@@ -22,14 +22,18 @@ def test_1():
         os.remove(path)
 
     @logger
+    def hello_world():
+        return 'Hello World'
+
+    @logger
     def summator(a, b=0):
         return a + b
-        
+
     @logger
     def div(a, b):
         return a / b
 
-    
+    assert 'Hello World' == hello_world(), "Функция возвращаяет 'Hello World'"
     result = summator(2, 2)
     assert isinstance(result, int), 'Должно вернуться целое число'
     assert result == 4, '2 + 2 = 4'
@@ -81,6 +85,10 @@ def test_2():
             os.remove(path)
 
         @logger(path)
+        def hello_world():
+            return 'Hello World'
+
+        @logger(path)
         def summator(a, b=0):
             return a + b
 
@@ -88,6 +96,7 @@ def test_2():
         def div(a, b):
             return a / b
 
+        assert 'Hello World' == hello_world()
         result = summator(2, 2)
         assert isinstance(result, int), 'Должно вернуться целое число'
         assert result == 4, '2 + 2 = 4'
