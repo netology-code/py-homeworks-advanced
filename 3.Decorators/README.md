@@ -33,7 +33,7 @@ def test_1():
     def div(a, b):
         return a / b
 
-    assert 'Hello World' == hello_world(), "Функция возвращаяет 'Hello World'"
+    assert 'Hello World' == hello_world(), "Функция возвращает 'Hello World'"
     result = summator(2, 2)
     assert isinstance(result, int), 'Должно вернуться целое число'
     assert result == 4, '2 + 2 = 4'
@@ -96,7 +96,7 @@ def test_2():
         def div(a, b):
             return a / b
 
-        assert 'Hello World' == hello_world(), "Функция возвращаяет 'Hello World'"
+        assert 'Hello World' == hello_world(), "Функция возвращает 'Hello World'"
         result = summator(2, 2)
         assert isinstance(result, int), 'Должно вернуться целое число'
         assert result == 4, '2 + 2 = 4'
